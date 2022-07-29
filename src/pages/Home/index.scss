@@ -12,7 +12,16 @@
   section.top {
     width: 100%;
     position: relative;
+     
 
+
+
+    .overlay{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      position: absolute;
+    }
     // height: 70vw;
     .img {
       // position: absolute;
@@ -107,4 +116,63 @@
     padding: 12px;
     margin: 24px;
     text-transform: uppercase;
+  }
+
+
+  @media screen and (max-width:700px){
+
+    section.top{
+      height: 100vh;
+      .img{
+        height: 100%;
+        img{
+          height: 100%;
+        }
+      }
+      .write_up{
+        width: 70%;
+      }
+      h1{
+        font-size: 1.2rem !important;
+      }
+
+
+    }
+
+    .intro{
+      padding: 24px;
+      box-sizing: border-box;
+    em{
+      font-size: 1em !important;
+      
+    }
+  }
+
+  .why_real_estate{
+    padding: 20px !important;
+
+
+    .item{
+      width: 100% !important;
+      // text-align: left;
+    }
+  }
+    .bottom{
+      .nav{
+        flex-direction: column;
+      }
+    }
+  .stay_connected{
+     textarea{
+      width: 70% !important;
+     }
+  }
+    .App{
+      height: 100vh;
+      overflow: scroll;
+    }
+
+    .footer main p{
+      width: 100% !important;
+    }
   }

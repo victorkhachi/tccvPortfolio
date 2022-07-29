@@ -40,6 +40,8 @@ const Home = () => {
   return (
     <div className="home">
       <section className="top">
+      <div className="overlay"></div>
+
         <div className="img">
           <img src={PIC1} alt="" />
         </div>

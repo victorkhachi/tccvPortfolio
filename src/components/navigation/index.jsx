@@ -26,7 +26,8 @@ const [navstyle,setNavstyle]=useState({})
         position:'fixed',
         boxShadow: '1px 1px 10px rgb(0 0 0 / 15%)',
         background:'rgba(255,255,255,0.5)',
-        transition:'all linear .3s'
+        transition:'all linear .3s',
+        
 
     })
      setNavstyle({color:'rgba(0,0,0,0.8)'})
@@ -52,17 +53,32 @@ const [navstyle,setNavstyle]=useState({})
 
 
   return (
+    <>
+      <div
+        onClick={() => setOpenNav(!openNav)}
+        className={openNav ? "slide_nav" : "slide_in"}
+      >
+        <div onClick={(e) => e.stopPropagation()} className="links">
+          <Link  to={""}>Home</Link>
+          <Link to={"/about"}>About</Link>
+          <Link to={"/strat"}>Strategy</Link>
+          <Link to={""}>Portfolio</Link>
+          <Link to={"/contact"}>Contact</Link>
+          <Link to={""}>FAQ</Link>
+          <Link to={""}>Invest</Link>
+        </div>
+      </div>
     <div className="navigation">
       {screenWidth > 700 && (
         <div className="header" style={style}>
           <div className="logo">THIS IS THE LOGO</div>
           <nav>
             <Link style={navstyle} to={""}>Home</Link>
-            <Link style={navstyle} to={""}>About</Link>
-            <Link style={navstyle} to={""}>Strategy</Link>
+            <Link style={navstyle} to={"/about"}>About</Link>
+            <Link style={navstyle} to={"/strat"}>Strategy</Link>
             <Link style={navstyle} to={""}>Portfolio</Link>
-            <Link style={navstyle} to={""}>Contact</Link>
-            <Link style={navstyle} to={""}>FAQ</Link>
+            <Link style={navstyle} to={"/contact"}>Contact</Link>
+            <Link style={navstyle} to={"/faq"}>FAQ</Link>
             <Link style={navstyle} to={""}>Invest</Link>
           </nav>
         </div>
@@ -70,29 +86,17 @@ const [navstyle,setNavstyle]=useState({})
       {screenWidth <= 700 && (
         <div className="small_header" style={style}>
           <div className="logo">this is the logo</div>
-          <FaBars onClick={() => setOpenNav(!openNav)} />
+          <FaBars style={navstyle} onClick={() => setOpenNav(!openNav)} />
         </div>
       )}
       <div ref={watchRef}  className="watch">
 
       </div>
-      <div
-        onClick={() => setOpenNav(!openNav)}
-        className={openNav ? "slide_nav" : "slide_in"}
-      >
-        <div onClick={(e) => e.stopPropagation()} className="links">
-          <Link to={""}>Home</Link>
-          <Link to={""}>About</Link>
-          <Link to={""}>Strategy</Link>
-          <Link to={""}>Portfolio</Link>
-          <Link to={""}>Contact</Link>
-          <Link to={""}>FAQ</Link>
-          <Link to={""}>Invest</Link>
-        </div>
-      </div>
+    
       {children}
       <Footer/>
     </div>
+    </>
   );
 };
 
@@ -135,10 +139,10 @@ const Footer = () => {
       <div className="bottom">
         <div className="nav">
         <Link to={""}>Home</Link>
-          <Link to={""}>About</Link>
-          <Link to={""}>Strategy</Link>
+          <Link to={"/about"}>About</Link>
+          <Link to={"strat"}>Strategy</Link>
           <Link to={""}>Portfolio</Link>
-          <Link to={""}>Contact</Link>
+          <Link to={"/contact"}>Contact</Link>
           <Link to={""}>FAQ</Link>
           <Link to={""}>Invest</Link>
         </div>
