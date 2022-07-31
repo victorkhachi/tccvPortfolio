@@ -75,3 +75,34 @@
     }
 
 }
+
+@media screen and (max-width:700px){
+    .about{
+        .top{
+            width: 100% !important;
+        }
+
+        .intro{
+            width: 90%;
+            height: fit-content !important;
+            padding: 24px;
+
+
+        }
+        .core_value{
+            h1{
+                font-size: 2.8em;
+            }
+            .values{
+                flex-direction: column;
+
+                div{
+                    width: 100%;
+                    p{
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+}

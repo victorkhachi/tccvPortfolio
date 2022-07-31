@@ -1,0 +1,234 @@
+.invest {
+  .top {
+    height: 50vh;
+    width: 80% !important;
+    margin: auto;
+
+    .img {
+      height: 100%;
+      transition: all linear 2s;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+  .intro {
+    width: 70%;
+    margin: auto;
+    padding: 120px 0;
+    position: relative;
+    //    flex-direction: ;
+    top: -60px;
+    z-index: 9;
+    background: rgb(111, 111, 214);
+    color: white;
+    padding: 34px;
+    box-sizing: border-box;
+    height: fit-content !important;
+    // em{
+    //     // width: %;
+    // }
+
+    .invest_Link {
+      color: white;
+    }
+
+    svg {
+      color: white;
+    }
+    .why_real_estate {
+      width: 50%;
+      .item {
+        width: 40%;
+      }
+    }
+
+    * {
+      background: none;
+      padding: 0;
+    }
+
+    .form {
+      background-color: white;
+      width: 40%;
+      color: black;
+      padding: 24px;
+      box-sizing: border-box;
+
+      h2 {
+        font-family: Gruppo;
+        font-size: 1.6em;
+        margin-bottom: 12px;
+      }
+
+      p {
+        color: 18px;
+        color: rgba($color: black, $alpha: 0.7);
+      }
+
+      form p {
+        // color:white ;
+        margin: 16px;
+        color: rgb(111, 111, 214);
+      }
+
+      button {
+        background: rgb(111, 111, 214);
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        margin: 12px;
+      }
+      label {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        span {
+          margin: 12px 0;
+        }
+
+        input {
+          outline: none;
+          padding: 8px;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+
+  .aquisition_method{
+    padding: 64px;
+    width: 80%;
+    margin: auto;
+    .head{
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        justify-content: center;
+        margin: 24px;
+
+        h1{
+            font-family: Gruppo;
+            font-size: 2.6em;
+        }
+        div{
+            width: 20%;
+            border: 1px solid grey;
+        }
+    }
+
+    p{
+        color: rgba($color: black, $alpha: 0.7);
+        font-size: 1.2em;
+    }
+  }
+
+  .methods{
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 24px;
+
+    div{
+        padding:64px 24px;
+        box-shadow: 0 0 2px grey;
+        width: 28%;
+        h2{
+            font-family: Gruppo;
+            font-size: 1.8em;
+        }
+
+        ul{
+            text-align: left;
+            color: rgba($color: black, $alpha: 0.6);
+            font-size: 1.2em;
+            margin-top: 12px;
+            padding: 24px;
+            font-weight: 500;
+
+            li{
+                margin: 6px 0;
+            }
+        }
+    }
+  }
+
+  .aquisition_method~section{
+    display: flex;
+    gap: 32px;
+    top: 0 !important;
+    margin-bottom: 64px;
+
+    .img{
+      width: 60%;  
+       img{
+        width: 100%;
+       }
+    }
+
+    .img~p{
+        width:50% ;
+        text-align: left;
+        line-height: 20px;
+        font-size: 18px;
+
+        h2{
+           font-family: Gruppo; 
+           margin: 24px;
+           font-size: 1.3em;
+        }
+    }
+  }
+}
+
+@media screen and (max-width:700px) {
+.invest{
+    .top{
+        width: 100% !important;
+      }
+
+      .intro{
+        flex-direction: column;
+        width: 100%;
+        padding: 18px;
+
+        .why_real_estate{
+            width: 85%;
+        }
+
+        .form{
+            width: 100%;
+        }
+      }
+
+      .aquisition_method{
+        padding: 14px;
+        box-sizing: border-box;
+        width: 90%;
+      }
+    
+      .methods{
+        flex-direction: column;
+        
+
+        div{
+            padding: 24px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+      }
+
+      .aquisition_method~ section {
+        .img{
+            display: none;
+        }
+
+        .img~p{
+            width: 100%;
+        }
+      }
+      
+}
+}

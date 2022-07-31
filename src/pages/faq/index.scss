@@ -150,3 +150,49 @@
       }
 }
 }
+
+@media screen and (max-width:700px) {
+ 
+ .faq{
+  .top{
+    width: 100% !important;
+  }
+
+  section.questions{
+    padding: 24px;
+    width: 80%;
+
+    .qna{
+      .question{
+        font-size: 14px;
+      }
+      .answer{
+        font-size: 12px;
+      }
+    }
+  }
+
+  .key_terms{
+    padding: 24px;
+
+    .categories{ 
+      flex-direction: column;
+      
+      .cat{
+      width: 100%;
+    }
+
+    .qna{
+      .question{
+        font-size: 16px;
+        padding: 8px;
+      }
+
+      .answer{
+        font-size: 14px;
+      }
+    }
+  }
+  }
+}
+}

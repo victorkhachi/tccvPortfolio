@@ -111,3 +111,31 @@ div{
 
 }
 }
+
+@media screen and (max-width:700px) {
+    .contact{
+        .top{
+            width: 100% !important;
+        }
+
+        .contacts{
+            width: 90%;
+            margin: auto;
+            flex-direction: column;
+        }
+
+        .contacts>div{
+           width: 100%;
+        }
+
+        .message{
+            p{
+                font-size: 1em;
+            }
+
+            form{
+                width: 99%;
+            }
+        }
+    }
+}

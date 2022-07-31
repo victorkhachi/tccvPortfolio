@@ -5,6 +5,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Faq from './pages/faq';
 import Home from './pages/Home';
+import Invest from './pages/invest';
 import Strategy from './pages/Strategy';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
            <Route path='/contact' element={<Contact/>}/>
            <Route path='/strat' element={<Strategy/>}/>
            <Route path='/faq' element={<Faq/>}/>
+           <Route path='/invest' element={<Invest/>}/>
        </Routes>
        </Navigation>
     </div>

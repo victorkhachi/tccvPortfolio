@@ -1,6 +1,6 @@
 import pic2 from "../../assets/images/contactImage.webp";
-import strat2 from "../../assets/images/strat2.jpg";
-import strat1 from "../../assets/images/strat1.jpg";
+import strat2 from "../../assets/images/pic6.jpg";
+import strat1 from "../../assets/images/pic5.jpg";
 import strat3 from "../../assets/images/strat3.jpg";
 import Puzzle from "../../assets/images/puzzle.jpg";
 import "./index.scss";

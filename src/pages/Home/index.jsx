@@ -1,6 +1,6 @@
 import { FaCoins, FaDollarSign,FaFileInvoiceDollar, FaHandHoldingUsd, FaLock, FaStackExchange } from "react-icons/fa";
 import PIC1 from "../../assets/images/pic1.jpg";
-import PIC3 from "../../assets/images/pic3.jpg";
+import PIC3 from "../../assets/images/pic4.jpg";
 import "./index.scss";
 const Home = () => {
   const why = [

@@ -64,8 +64,8 @@ const [navstyle,setNavstyle]=useState({})
           <Link to={"/strat"}>Strategy</Link>
           <Link to={""}>Portfolio</Link>
           <Link to={"/contact"}>Contact</Link>
-          <Link to={""}>FAQ</Link>
-          <Link to={""}>Invest</Link>
+          <Link to={"/faq"}>FAQ</Link>
+          <Link to={"/invest"}>Invest</Link>
         </div>
       </div>
     <div className="navigation">
@@ -79,7 +79,7 @@ const [navstyle,setNavstyle]=useState({})
             <Link style={navstyle} to={""}>Portfolio</Link>
             <Link style={navstyle} to={"/contact"}>Contact</Link>
             <Link style={navstyle} to={"/faq"}>FAQ</Link>
-            <Link style={navstyle} to={""}>Invest</Link>
+            <Link style={navstyle} to={"/invest"}>Invest</Link>
           </nav>
         </div>
       )}
@@ -143,8 +143,8 @@ const Footer = () => {
           <Link to={"strat"}>Strategy</Link>
           <Link to={""}>Portfolio</Link>
           <Link to={"/contact"}>Contact</Link>
-          <Link to={""}>FAQ</Link>
-          <Link to={""}>Invest</Link>
+          <Link to={"/faq"}>FAQ</Link>
+          <Link to={"/invest"}>Invest</Link>
         </div>
         <p>Copyright The Collectives Capital ventures 2022 © Designed By <a href="linkedin.com/in/onyedikachi-obi">Onyedikachi Obi</a></p>
       </div>
