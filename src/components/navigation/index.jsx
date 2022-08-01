@@ -8,7 +8,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
-
+import Logo from '../../assets/images/Union.png'
 const Navigation = ({ children }) => {
   let screenWidth = window.innerWidth;
   const [openNav, setOpenNav] = useState(false);
@@ -71,7 +71,8 @@ const [navstyle,setNavstyle]=useState({})
     <div className="navigation">
       {screenWidth > 700 && (
         <div className="header" style={style}>
-          <div className="logo">THIS IS THE LOGO</div>
+          <div className="logo" style={{width:'50px'}}><img  style={{width:'100%'}} src={Logo} alt="" /></div>
+          
           <nav>
             <Link style={navstyle} to={""}>Home</Link>
             <Link style={navstyle} to={"/about"}>About</Link>
@@ -85,7 +86,7 @@ const [navstyle,setNavstyle]=useState({})
       )}
       {screenWidth <= 700 && (
         <div className="small_header" style={style}>
-          <div className="logo">this is the logo</div>
+          <div className="logo" style={{width:'50px'}}><img  style={{width:'100%'}} src={Logo} alt="" /></div>
           <FaBars style={navstyle} onClick={() => setOpenNav(!openNav)} />
         </div>
       )}
@@ -103,23 +104,28 @@ const [navstyle,setNavstyle]=useState({})
 export default Navigation;
 
 const Footer = () => {
+  const [message,setMessage]=useState()
+  const linkRef=useRef()
   return (
     <div className="footer">
       <div className="stay_connected">
         <div className="overlay"></div>
         <h1>Send mail</h1>
         <p>send us a mail to make reservations and enquiries</p>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <textarea onChange={(e)=>setMessage(e.target.value)} name="" id="" cols="30" rows="10"></textarea>
 
-        <button>Send mail</button>
+        <button onClick={()=>{
+          
+          if(message)linkRef.current.click()}}>Send mail</button>
+        <a ref={linkRef} style={{display:'none'}} href={`mailto:michaelolly@thecollectivescapital?subject=Inquiry&body=${message}`}></a>
       </div>
       <main>
         <h1>Connect</h1>
         <div className="socials">
-        <a href=""> <FaInstagram /></a>
-        <a href=""> <FaTwitter /></a>
-        <a href="">  <FaEnvelope /></a>
-        <a href="">  <FaLinkedin /></a>
+        {/* <a href=""> <FaInstagram /></a> */}
+        {/* <a href=""> <FaTwitter /></a> */}
+        {/* <a href="">  <FaEnvelope /></a> */}
+        <a href="https://www.linkedin.com/in/oluchukwu-michael-223ba8246">  <FaLinkedin /></a>
         </div>
         <h1>Disclaimer</h1>
         <p>

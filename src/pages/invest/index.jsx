@@ -9,6 +9,7 @@ import {
 import pic2 from "../../assets/images/contactImage.webp";
 import "./index.scss";
 import Pic5 from '../../assets/images/pic5.jpg'
+import { useRef, useState } from "react";
 
 const Invest = () => {
   const why = [
@@ -37,6 +38,9 @@ const Invest = () => {
         "You can leverage real estate, this allows you to buy a $10M property with only $2.5M.",
     },
   ];
+
+   const formRef= useRef()
+  const [formParams,setFormParams]=useState({})
   return (
     <div className="home invest">
       <section data-aos="fade-up"
@@ -93,21 +97,29 @@ const Invest = () => {
             <p>Find out here</p>
             <label htmlFor="">
               <span>Name</span>
-              <input type="text" />
+              <input onChange={(e)=>setFormParams({...formParams,[e.target.name]:e.target.value})} name='name' type="text" />
             </label>
             <label htmlFor="">
               <span>Email</span>
-              <input type="text" />
+              <input onChange={(e)=>setFormParams({...formParams,[e.target.name]:e.target.value})} name="email" type="email" />
             </label>
             <label htmlFor="">
               <span>Phone</span>
-              <input type="tel" />
+              <input onChange={(e)=>setFormParams({...formParams,[e.target.name]:e.target.value})} name="phone" type="tel" />
             </label>
             <label htmlFor="">
               <span>Comment</span>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <textarea onChange={(e)=>setFormParams({...formParams,[e.target.name]:e.target.value})} name="comment" id="" cols="30" rows="10"></textarea>
             </label>
-            <button>submit</button>
+            <button onClick={(e)=>{
+              e.preventDefault()
+              if(formParams?.name && formParams?.comment) formRef.current.click()
+            }}>submit</button>
+            <a ref={formRef} style={{display:"none"}} href={`mailto:michaelolly@thecollectivescapitalventures.com?subject=from ${formParams.name}&body= Tel:
+            ${formParams.phone}
+            comment:
+            ${formParams.comment}
+          `}></a>
           </form>
         </div>
       </section>
