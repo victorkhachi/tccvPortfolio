@@ -70,17 +70,17 @@ const [navstyle,setNavstyle]=useState({})
       </div>
     <div className="navigation">
       {screenWidth > 700 && (
-        <div className="header" style={style}>
+        <div id="top" className="header" style={style}>
           <div className="logo" style={{width:'50px'}}><img  style={{width:'100%'}} src={Logo} alt="" /></div>
           
           <nav>
             <Link style={navstyle} to={""}>Home</Link>
-            <Link style={navstyle} to={"/about"}>About</Link>
-            <Link style={navstyle} to={"/strat"}>Strategy</Link>
+            <Link style={navstyle} to={"/about#top"}>About</Link>
+            <Link style={navstyle} to={"/strat#top"}>Strategy</Link>
             <Link style={navstyle} to={""}>Portfolio</Link>
-            <Link style={navstyle} to={"/contact"}>Contact</Link>
-            <Link style={navstyle} to={"/faq"}>FAQ</Link>
-            <Link style={navstyle} to={"/invest"}>Invest</Link>
+            <Link style={navstyle} to={"/contact#top"}>Contact</Link>
+            <Link style={navstyle} to={"/faq#top"}>FAQ</Link>
+            <Link style={navstyle} to={"/invest#top"}>Invest</Link>
           </nav>
         </div>
       )}
