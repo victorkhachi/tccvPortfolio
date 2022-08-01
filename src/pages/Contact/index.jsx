@@ -1,7 +1,11 @@
+import { useRef, useState } from 'react'
 import pic2 from '../../assets/images/contactImage.webp'
 import './index.scss'
 
  const Contact=()=>{
+
+  const formRef= useRef()
+  const [formParams,setFormParams]=useState({})
     return (
         <div className="home contact">
   <section data-aos="fade-up"
@@ -19,12 +23,12 @@ import './index.scss'
 
       <div   data-aos="flip-up" className="contacts">
         <div  data-aos="fade-left" className="schedule">
-            <a className='invest_Link' href="mailto:">Schedule a call</a>
+            <a className='invest_Link' href="mailto:michaelolly@thecollectivescapitalventures">Schedule a call</a>
         </div>
         <div  data-aos="fade-left" className="details">
-            <p>Email Us: <a href='mailto:'>Email@example.com</a></p>
+            <p>Email Us: <a href='mailto:michaelolly@thecollectivescapitalventures.com'>Michaelolly@thecollectivescapitalventures.com</a></p>
 
-            <address>Call us : <a href='tel:'>082134567777</a></address>
+            <address>Call us : <a href='tel:+1 (202) 855-1518'>+1 (202) 855-1518</a></address>
         </div>
       </div>
 
@@ -35,27 +39,36 @@ import './index.scss'
         <div>
                <label htmlFor="">
                 <span>Name</span>
-                <input type="text" />
+                <input onChange={(e)=>setFormParams({...formParams,[e.target.name]:e.target.value})} name='name' type="text" />
                </label>
                <label htmlFor=""><span> Email</span>
-               <input type="text" /></label>
+               <input onChange={(e)=>setFormParams({...formParams,[e.target.name]:e.target.value})} type="email" /></label>
         </div>
         <div>
                <label htmlFor="">
                 <span>Phone Number</span>
-                <input type="text" />
+                <input name='phone' onChange={(e)=>setFormParams({...formParams,[e.target.name]:e.target.value})} type="number" />
                 </label>
                <label htmlFor="">
                 <span>Others</span>
-                <input type="text" />
+                <input onChange={(e)=>setFormParams({...formParams,[e.target.name]:e.target.value})} name='others' type="tel" />
                </label>
         </div>
         <label htmlFor="">
            <span>Inquiry note</span>
-           <textarea name="" id="" cols="30" rows="10"></textarea>
+           <textarea onChange={(e)=>setFormParams({...formParams,[e.target.name]:e.target.value})} name="note" id="" cols="30" rows="10"></textarea>
         </label>
-
-        <button>Submit</button>
+        <button onClick={(e)=>{
+              e.preventDefault()
+              if(formParams?.name && formParams?.note) formRef.current.click()
+            }}>submit</button>
+            <a ref={formRef} style={{display:"none"}} href={`mailto:michaelolly@thecollectivescapitalventures.com?subject=from ${formParams.name}&body= Tel:
+            ${formParams.phone}
+            other:
+            ${formParams.others}
+            comment:
+            ${formParams.note}
+          `}></a>
         </form>
       </div>
         </div>
