@@ -68,15 +68,14 @@ const Home = () => {
 
         <div className="why">
             {why.map(answers=>(
-                <div data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom" className="item">
+                <div style={{opacity:'1'}} className="item">
                     <div>{answers.svg}</div>
                     <h2>{answers.title}</h2>
                     <p>{answers.writeup}</p>
                 </div>
             ))}
         </div>
-         <button style={{border:"none",color:'white'}} className="invest_Link">Start now</button>
+         {/* <button style={{border:"none",color:'white'}} className="invest_Link">Start now</button> */}
       </section>
       <section className="investment_plan top">
         <div style={{position:'static'}} className="img">
