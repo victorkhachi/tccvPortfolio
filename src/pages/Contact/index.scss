@@ -1,3 +1,16 @@
+
+html:not(.no-js) [data-aos=fade-left]{
+    -webkit-transform: translate3d(0,0,0); 
+    transform: translate3d(0,0,0);
+}
+html:not(.no-js) [data-aos=fade-right]{
+    -webkit-transform: translate3d(0,0,0); 
+    transform: translate3d(0,0,0);
+}
+html:not(.no-js) [data-aos=fade-up-right]{
+    -webkit-transform: translate3d(0,0,0); 
+    transform: translate3d(0,0,0);
+}
 .contact{
     // top: 40px;
     overflow: hidden;

@@ -68,7 +68,7 @@ const Home = () => {
 
         <div className="why">
             {why.map(answers=>(
-                <div style={{opacity:'1'}} className="item">
+                <div data-aos="fade-left"  style={{opacity:'1'}} className="item">
                     <div>{answers.svg}</div>
                     <h2>{answers.title}</h2>
                     <p>{answers.writeup}</p>
