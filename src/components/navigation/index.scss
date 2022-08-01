@@ -6,7 +6,7 @@
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    padding: 24px;
+    padding: 10px 24px;
     box-sizing: border-box;
     align-items: center;
     position: absolute;
@@ -152,6 +152,7 @@ a{
     color: antiquewhite;
     text-transform: uppercase;
     font-weight: bolder;
+    margin: 12px 0;
 }
 a:hover{
     color:white;
