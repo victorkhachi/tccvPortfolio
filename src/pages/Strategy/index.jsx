@@ -8,7 +8,8 @@ import "./index.scss";
 const Strategy = () => {
   return (
     <div className="home strategy">
-      <section className="top">
+      <section data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" className="top">
         <div className="overlay"></div>
         <div className="img">
           <img src={pic2} alt="" />
@@ -37,7 +38,9 @@ const Strategy = () => {
         style={{ background: "rgba(12,12,12,0.2)" }}
         className="img_write_up"
       >
-        <div className="write_up">
+        <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className="write_up">
           <h1>Acquisition Criteria</h1>
           <p>
             The following criteria is used to identify undervalued multifamily
@@ -85,15 +88,17 @@ const Strategy = () => {
             </li>
           </ul>
         </div>
-        <div className="img">
+        <div  data-aos="fade-left" className="img">
           <img src={strat1} alt />
         </div>
       </section>
       <section className="img_write_up">
-        <div className="img">
+        <div  data-aos="fade-left" className="img">
           <img src={strat2} alt="" />
         </div>
-        <div className="write_up">
+        <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className="write_up">
           <h1> Emerging Markets</h1>
           <p>
             {" "}
@@ -128,7 +133,7 @@ const Strategy = () => {
         </div>
       </section>
       <section style={{ background: "rgba(12,12,12,0.2)" }} className="img_write_up">
-        <div className="write_up">
+        <div  data-aos="fade-left" className="write_up">
           <h1> Acquisition Practices</h1>
           <p>
             {" "}
@@ -167,12 +172,14 @@ const Strategy = () => {
             zoning and increases in building permits are avoided.
           </p>
         </div>
-        <div className="img">
+        <div  data-aos="fade-left" className="img">
           <img src={strat3} alt="" />
         </div>
       </section>
       <section className="img_write_up">
-        <div className="write_up">
+        <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className="write_up">
        <h1> Path of Progress Strategy</h1>
 <p> A Path of Progress is where the greatest amount of building and development is currently happening, or soon to be.</p>
 <h2>
@@ -186,7 +193,7 @@ A PATH OF PROGRESS IS WHERE:
 <p>Investing in the Path of Progress yields the greatest returns in a short period of time.</p>
 
         </div>
-        <div className="img">
+        <div data-aos="fade-up-right" className="img">
           <img src={Puzzle} alt=""/>
         </div>
       </section>

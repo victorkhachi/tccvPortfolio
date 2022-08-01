@@ -42,7 +42,8 @@ const Home = () => {
       <section className="top">
       <div className="overlay"></div>
 
-        <div className="img">
+        <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" className="img">
           <img src={PIC1} alt="" />
         </div>
         <div className="write_up">
@@ -67,7 +68,8 @@ const Home = () => {
 
         <div className="why">
             {why.map(answers=>(
-                <div className="item">
+                <div data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" className="item">
                     <div>{answers.svg}</div>
                     <h2>{answers.title}</h2>
                     <p>{answers.writeup}</p>

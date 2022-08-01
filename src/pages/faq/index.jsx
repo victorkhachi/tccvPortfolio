@@ -454,7 +454,8 @@ For example, a 415 unit apartment community purchased for $24,750,000 with a GPR
   ];
   return (
     <div className="home faq">
-      <section className="top">
+      <section data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" className="top">
         <div className="overlay"></div>
         <div className="img">
           {" "}

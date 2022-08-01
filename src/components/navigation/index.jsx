@@ -106,6 +106,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="stay_connected">
+        <div className="overlay"></div>
         <h1>Send mail</h1>
         <p>send us a mail to make reservations and enquiries</p>
         <textarea name="" id="" cols="30" rows="10"></textarea>

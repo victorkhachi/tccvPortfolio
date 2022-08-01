@@ -4,7 +4,8 @@ import './index.scss'
  const Contact=()=>{
     return (
         <div className="home contact">
-  <section className="top">
+  <section data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" className="top">
   <div className="overlay"></div>
 
         <div className="img">
@@ -16,11 +17,11 @@ import './index.scss'
         </div>
       </section>
 
-      <div className="contacts">
-        <div className="schedule">
+      <div   data-aos="flip-up" className="contacts">
+        <div  data-aos="fade-left" className="schedule">
             <a className='invest_Link' href="mailto:">Schedule a call</a>
         </div>
-        <div className="details">
+        <div  data-aos="fade-left" className="details">
             <p>Email Us: <a href='mailto:'>Email@example.com</a></p>
 
             <address>Call us : <a href='tel:'>082134567777</a></address>

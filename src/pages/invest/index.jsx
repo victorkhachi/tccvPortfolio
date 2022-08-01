@@ -39,7 +39,8 @@ const Invest = () => {
   ];
   return (
     <div className="home invest">
-      <section className="top">
+      <section data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" className="top">
         <div className="overlay"></div>
 
         <div className="img">

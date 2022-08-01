@@ -4,7 +4,8 @@ import "./index.scss";
 const About = () => {
   return (
     <div className="about home">
-      <section className="top">
+      <section data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" className="top">
       <div className="overlay"></div>
 
         <div className="img">
@@ -38,7 +39,7 @@ const About = () => {
       <section className="core_value">
         <h1>Core Values</h1>
         <div className="values">
-          <div>
+          <div   data-aos="flip-up">
             <h2>Integrity</h2>
             <p>
              The collectives capital ventures conducts all business with the
@@ -48,7 +49,7 @@ const About = () => {
               honestly and with full transparency in all our endeavors.
             </p>
           </div>
-          <div>
+          <div  data-aos="flip-down">
             <h2>Relationship</h2>
             <p>
              The collectives capital ventures goal is to foster meaningful
@@ -57,7 +58,7 @@ const About = () => {
               mutually beneficial business relationships.
             </p>
           </div>
-          <div>
+          <div  data-aos="flip-up">
             <h2>Excellence</h2>
             <p>
              The collectives capital ventures believes that excellence is not
@@ -66,7 +67,7 @@ const About = () => {
               provide solutions that are enterprising, pragmatic and effective.
             </p>
           </div>
-          <div>
+          <div  data-aos="flip-down">
             <h2>Service</h2>
             <p>
              The Collectives Capital ventures is committed to outstanding
