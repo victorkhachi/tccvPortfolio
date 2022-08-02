@@ -39,7 +39,7 @@ const About = () => {
       <section className="core_value">
         <h1>Core Values</h1>
         <div className="values">
-          <div   data-aos="flip-up">
+          <div   >
             <h2>Integrity</h2>
             <p>
              The collectives capital ventures conducts all business with the
@@ -49,7 +49,7 @@ const About = () => {
               honestly and with full transparency in all our endeavors.
             </p>
           </div>
-          <div  data-aos="flip-down">
+          <div  >
             <h2>Relationship</h2>
             <p>
              The collectives capital ventures goal is to foster meaningful
@@ -58,7 +58,7 @@ const About = () => {
               mutually beneficial business relationships.
             </p>
           </div>
-          <div  data-aos="flip-up">
+          <div  >
             <h2>Excellence</h2>
             <p>
              The collectives capital ventures believes that excellence is not
@@ -67,7 +67,7 @@ const About = () => {
               provide solutions that are enterprising, pragmatic and effective.
             </p>
           </div>
-          <div  data-aos="flip-down">
+          <div >
             <h2>Service</h2>
             <p>
              The Collectives Capital ventures is committed to outstanding

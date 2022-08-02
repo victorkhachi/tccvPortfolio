@@ -1,9 +1,10 @@
 import pic2 from "../../assets/images/contactImage.webp";
-import strat2 from "../../assets/images/pic6.jpg";
+import strat2 from "../../assets/images/test.jpg";
 import strat1 from "../../assets/images/pic5.jpg";
 import strat3 from "../../assets/images/strat3.jpg";
 import Puzzle from "../../assets/images/puzzle.jpg";
 import "./index.scss";
+import { Link } from "react-router-dom";
 
 const Strategy = () => {
   return (
@@ -32,7 +33,7 @@ const Strategy = () => {
           imbalance between the strong and growing demand and limited new supply
           of these units.
         </em>
-        <div className="invest_Link">invest now</div>
+        <Link to={'/invest'} className="invest_Link">invest now</Link>
       </section>
       <section
         style={{ background: "rgba(12,12,12,0.2)" }}

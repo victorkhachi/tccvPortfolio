@@ -184,7 +184,9 @@
 }
 
 @media screen and (max-width:700px) {
-.invest{
+  html:not(.no-js) [data-aos^=fade][data-aos^=fade] {
+  opacity: 1 !important;
+      }    .invest{
   overflow: hidden;
     .top{
         width: 100% !important;
