@@ -129,7 +129,7 @@ const Footer = () => {
         </div>
         <h1>Disclaimer</h1>
         <p>
-         <span> No Offer of Securities—Disclosure of Interests</span> Under no circumstances
+         <span> No Offer of Securities—Disclosure of interests</span> under no circumstances
           should any material at this site be used or considered as an offer to
           sell or a solicitation of any offer to buy an interest in any
           investment. Any such offer or solicitation will be made only by means
@@ -153,7 +153,7 @@ const Footer = () => {
           <Link to={"/faq"}>FAQ</Link>
           <Link to={"/invest"}>Invest</Link>
         </div>
-        <p>Copyright The Collectives Capital ventures 2022 © Designed By <a href="linkedin.com/in/onyedikachi-obi">Onyedikachi Obi</a></p>
+        <p>Copyright The Collectives Capital ventures 2022 © Designed By <a href="linkedin.com/in/onyedikachi-obi"> Obi</a></p>
       </div>
     </div>
   );

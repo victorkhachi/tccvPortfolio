@@ -1,4 +1,5 @@
 import { FaCoins, FaDollarSign,FaFileInvoiceDollar, FaHandHoldingUsd, FaLock, FaStackExchange } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import PIC1 from "../../assets/images/pic1.jpg";
 import PIC3 from "../../assets/images/pic4.jpg";
 import "./index.scss";
@@ -37,6 +38,7 @@ const Home = () => {
       writeup: "Forced appreciation through strategic value plays increase the overall value of the property.",
     },
   ];
+  const navigate=useNavigate()
   return (
     <div className="home">
       <section className="top">
@@ -49,7 +51,7 @@ const Home = () => {
         <div className="write_up">
           <h1>The Collectives Capital ventures</h1>
           <p>Achieve financial freedom through real estate investing.</p>
-          <div draggable className="invest_Link">
+          <div onClick={()=>navigate('/invest')} draggable className="invest_Link">
             Invest with us
           </div>
         </div>
